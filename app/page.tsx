@@ -4,9 +4,11 @@ import Link from "next/link";
 import {
   ArrowUpRight,
   Database,
+  Instagram,
   Layers,
   ShieldCheck,
   Sparkles,
+  Linkedin,
   Wand2,
 } from "lucide-react";
 
@@ -41,7 +43,7 @@ export default function Home() {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" className="gap-2" asChild>
-                  <Link href="https://github.com">
+                  <Link href="https://github.com/pixelbymoz/pixel-starterkit" target="_blank">
                     View on GitHub
                     <ArrowUpRight className="h-4 w-4" />
                   </Link>
@@ -242,6 +244,27 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <footer className="border-t bg-card/60 backdrop-blur">
+        <div className="container flex flex-col gap-3 px-6 py-6 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
+          <p className="text-foreground">Built by Mochamad Rizky.</p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="https://www.linkedin.com/in/mochamad-rizky-4b07031a2/" target="_blank"
+              className="inline-flex items-center gap-2 hover:text-primary"
+            >
+              <Linkedin className="h-4 w-4" />
+              LinkedIn
+            </Link>
+            <Link
+              href="https://www.instagram.com/pixelbymoz/" target="_blank"
+              className="inline-flex items-center gap-2 hover:text-primary"
+            >
+              <Instagram className="h-4 w-4" />
+              Instagram
+            </Link>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
